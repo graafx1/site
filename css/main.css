@@ -49,4 +49,6 @@ aside {
     padding: 10px; /* Поля вокруг текста */
     margin: auto;
 }
-
+.main-article p {
+    float:right;
+}
