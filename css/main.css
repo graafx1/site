@@ -1,39 +1,20 @@
 body {
-    	background-image: url("shanks-bg.jpg");
+    background-color: #FFE0D9;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 50%;
-    float: left;
-}
-
-li {
-    float: left;
-    
-}
-
-li a {
-    display: block;
-    font-size: 200%;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    font-family: 'Lora', serif;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #ff7c4d;
+a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: red;
+   }
+a:hover {
+    color: black;
 }
 #navigation {
        top:0;
-       position:fixed;
+       position:absolute;
        display:block;
        width:100%;
-       height:68px;
 }
+
 .search-form {
     margin:0 auto;
     position: absolute;
@@ -41,14 +22,181 @@ li a:hover {
      right:110px;
      margin-top: 24px;
 }
+
+.search-form .field {
+  width: 150px;
+  height: 20px;
+  background: #FFE0D9;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.search-form input[type=submit] {
+    position:relative; 
+	left: 1px;
+	border:1px solid #adc5cf;
+	background: #e4f1f9; /* Old browsers */
+	background: -moz-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4f1f9), color-stop(100%,#d5e7f3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* IE10+ */
+	background: linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f1f9', endColorstr='#d5e7f3',GradientType=0 ); /* IE6-9 */
+	color:#7da2aa;
+	cursor: pointer;
+}
+#nav2 {
+    width: 15%;
+    float: left;
+}
+ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        
+        clear: both;
+}
+li {padding: 15px;
+    border-left: 1px dotted red;
+    border-bottom: 1px dotted red;
+    width: 56%;
+}
+
+li a {
+        
+        color: red;
+        padding: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 200%;
+        display: block;
+}
+li a:hover {
+    background-color: red;
+}
 aside {
+    margin-top: 98px;
     float: right;
+    border: 2px dotted red;
+}
+.poll {
+    top: 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Lora', serif;
 }
 .main-article {
-    width: 200px; /* Ширина элемента в пикселах */
+    width: 700px; /* Ширина элемента в пикселах */
     padding: 10px; /* Поля вокруг текста */
     margin: auto;
+    font-family: 'Lora', serif;
+    font-size: 14pt;
+    text-indent: 20px;
 }
-.main-article p {
-    float:right;
+
+.mainjpg {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px;
 }
+.container {
+    width: 100%;
+}
+.other-articles1 article {
+    width: 30%;
+    padding: 10px;
+    float: left;
+    margin: auto;
+    font-family: 'Lora', serif;
+    border-top: 1px dotted red;
+    border-bottom: 1px dotted red;
+    border-right: 1px dotted red;
+    border-left: 1px dotted red;
+}
+.other-articles1 p {
+    text-indent: 20px;
+    font-size: 11pt;
+}
+.other-articles1 header {
+    font-size: 14pt;
+}
+.other-articles2 {
+    clear: both;
+}
+.other-articles2 article {
+    width: 30%;
+    padding: 10px;
+    float: left;
+    font-family: 'Lora', serif;
+    border-right: 1px dotted red;
+    border-left: 1px dotted red;
+    border-bottom: 1px dotted red;
+}
+.other-articles2 p {
+    text-indent: 20px;
+    font-size: 11pt;
+}
+.other-articles2 header {
+    font-size: 14pt;
+}
+.paginator {
+    clear:both;
+    width: 320px;
+    margin: 30px auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.paginator a {
+    display: inline-block;
+    min-width: 20px;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #95a5a6;
+}
+
+.paginator .prev {
+    margin-right: 20px;
+    text-indent: -1000px;
+    background-image: url("/assets/course14/arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.paginator .next {
+    margin-left: 20px;
+    text-indent: -1000px;
+    background-image: url("/assets/course14/arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+}
+
+.paginator .current {
+    background-color: #16a085;
+}
+
+.paginator .disabled {
+     opacity: 0.3;
+}
+
+.paginator a:hover {
+    background-color: #2ecc71;
+}
+#footer {
+    clear:both;
+    background: red;
+    width: 100%;
+}
+

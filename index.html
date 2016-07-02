@@ -4,26 +4,29 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/main.css">
         <link href='https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
         <title> Сайт </title>
     </head>
     <body>
         <div id="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
+            <form class="search-form" id="search-form" method="post" action="https://formspree.io/graafx1@gmail.com">
+                 <label for="name"></label>
+                 <input class="field" type="text" name="name" id="name">
+                 <input type="submit" value="Пошук">
+            </form>
+        </div>
+        <section class="social"></section><!-- twitter & facebook--> 
+            <img src="Anfield_panorama.jpg" width="100%" height="210px" alt="текст"> <!-- logo-->
+              <div id="nav2">
+              <ul>
+            <li><a href="index.html">Головна</a></li>
             <li><a href="team.html">Команда</a></li>
             <li><a href="fixtures.html">Календар</a></li>
             <li><a href="about-me.html">Про мене</a></li>
-        </ul>
-        <form class="search-form" id="search-form" method="post" action="https://formspree.io/graafx1@gmail.com">
-                 <label for="name"></label>
-                 <input type="text" name="name" id="name">
-                 <input type="submit" value="Пошук">
-        </form>
-        </div>
-        <section class="social"></section><!-- twitter & facebook--> 
-            <img src="Anfield_panorama.jpg" width="100%" height="200px" vspace="10px" alt="текст"> <!-- logo-->
+              </ul>  
+              </div>
         <aside>
-            <form id="poll" method="post" action="https://formspree.io/graafx1@gmail.com">
+            <form class="poll" form id="poll" method="post" action="https://formspree.io/graafx1@gmail.com">
             <h3>На якому місці фінішує Ліверпуль в сезоні 2016/17?</h3>
             <input type="radio" name="poll" id="poll" value="1" checked> На 1-ому<br>
             <input type="radio" name="poll" id="poll" value="2-4"> 2-4<br>
@@ -34,26 +37,29 @@
             <!-- Poll -->
         </aside>
         <article class="main-article">
-            <header><a href="article.html">Ліверпуль: огляд сезону 2015/16 - частина 3</a></header>
-            <img src="3500.jpg" alt="Ліверпуль-Севілья 1:3">
+            <header><a href="article.html"><h2>Ліверпуль: огляд сезону 2015/16 - частина 3</h2></a></header>
+            <img src="3500.jpg" alt="Ліверпуль-Севілья 1:3" class="mainjpg" height="177px">
             <p>Ще по ходу команди сіткою Кубку Ліги стало зрозуміло, що Клопп не надто розраховував на третьосортну чашку. Але коли резерв, а згодом уже напіврезерв зумів пробитись до півфіналу КЛ, на двоматчеву дуель проти Стока вийшов цілком бойовий склад. Хоча паралельним курсом боротьбу на ранній стадії за найстаріший футбольний трофей бились здебільшого глибокі резервісти, гравці академії та Хосе Енріке</p>
         </article>
-        <section class="other-articles">
-            <article>
+        <section class="container">
+        <section class="other-articles1">
+            <article class="two">
                 <header><a href="article2.html">Ліверпуль: огляд сезону 2015/16 - частина 2</a></header>
                 <img src="jurgen-klopp-liverpool.png" alt="Юрген Клопп">
-                <p>Як і про Бентеке, так і про Юргена Клоппа я довгенько не міг скласти враження. Це певно і стало причиною "мовчання" на цю дуже цікаву тему. Врешті-решт, можна поділитись враженнями про його прихід крізь призму завершеного сезону.</p> 
+                <p>Як і про Бентеке, так і про Клоппа я довгенько не міг скласти враження. Це певно і стало причиною "мовчання" на цю дуже цікаву тему.</p> 
             </article>
             <article>
                 <header><a href="article3.html">Ліверпуль: огляд сезону 2015/16 - частина 1</a></header>
                 <img src="Brendan-Rodgers.jpg" alt="Брендан Роджерс">
-                <p>Складно підводити підсумки сезону, поки той не закінчиться. Особливо, якщо мова йде про враження, якими я буду ділитись нижче. Благо 9 місяців пройшли не менш весело, ніж проходить вагітність:)</p> 
+                <p>Складно підводити підсумки сезону, поки той не закінчиться. Особливо, якщо мова йде про враження, якими я буду ділитись нижче</p> 
             </article>
             <article>
                 <header><a href="article4.html">Ліверпуль - Севілья 1:3</a></header>
                 <img src="508bfe3.jpg" alt="Гол Старріджа">
-                <p>Ліверпуль та Севілья не програли жодного фіналу Кубка УЄФА або Ліги Європи, яка була організована в 2009 році. Якщо іспанська команда на міжнародному рівні перемагала лише в Кубку УЄФА, а в 2006 році завоювала Суперкубок Європи, Ліверпуль п'ять разів ставав кращим клубом континенту, вигравши Кубок європейських чемпіонів і ще тричі - Суперкубок Європи. Так сталося, що обидві команди зійшлися у фіналі поточного розіграшу Ліги Європи, і свою переможну стежку продовжила саме Севілья, яка втретє поспіль захистила титул кращої команди другого за значимістю єврокубкового клубного турніру.</p> 
+                <p>Факт: Ліверпуль та Севілья на двох досі не програли жодного фіналу Кубка УЄФА або Ліги Європи, яка була організована в 2009 році. </p> 
             </article>
+        </section>
+        <section class="other-articles2">
             <article>
                 <header><a href="article5.html">ВБА - Ліверпуль 1:1</a></header>
                 <img src="ibe-west-brom.jpg" alt="Гол Айба">
@@ -67,14 +73,20 @@
             <article>
                 <header><a href="article7.html">Ліверпуль - Уотфорд 2:0</a></header>
                 <img src="allen-watford.jpg" alt="Гол Аллена">
-                <p>Ліверпуль залишився на восьмому місці, перемігши Уотфорд. Це була перша вікторія мерсисайдців за три останні матчі.</p> 
+                <p>Ліверпуль залишився на восьмому місці, перемігши Уотфорд завдяки голам Джо Аллена та Роберто Фірміно. Це була перша вікторія мерсисайдців за три останні матчі.</p> 
             </article>
         </section>
-        <section class="pager">
-            <!-- Перемикач сторінок-->
         </section>
-        <footer>
+        <div class="paginator">
+            <a href="#prev">Назад</a>
+            <a href="#1">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#1">4</a>
+            <a href="#next">Вперед</a>
+        </div>
+        <div id="footer">
             <p>© All rights reserved.</p>
-        </footer>
+        </div>
     </body>
 </html>
