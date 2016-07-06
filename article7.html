@@ -2,47 +2,49 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/article.css">
+        <link href='https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
         <title> Ліверпуль - Уотфорд 2:0 </title>
     </head>
     <body>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="team.html">Команда</a>
-            <a href="fixtures.html">Календар</a>
-            <a href="about-me.html">Про мене</a>
-        </nav>
-        <section class="social"></section><!-- twitter & facebook--> 
-        <section id="search">
+        <div id="navigation">
             <form class="search-form" id="search-form" method="post" action="https://formspree.io/graafx1@gmail.com">
                  <label for="name"></label>
-                 <input type="text" name="name" id="name">
+                 <input class="field" type="text" name="name" id="name">
                  <input type="submit" value="Пошук">
             </form>
-        </section><!-- search-->
-        <section>
-            <img src="future-logo.jpg" alt="текст"> <!-- logo-->
-        </section>
+        </div>
+        <section class="social"></section><!-- twitter & facebook--> 
+            <img src="images/Liverpool_FC_08_09_by_SimpsonsCameos.jpg" width="100%" height="302px" alt="текст"> <!-- logo-->
+              <div id="nav2">
+              <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="team.html">Команда</a></li>
+            <li><a href="fixtures.html">Календар</a></li>
+            <li><a href="about-me.html">Про мене</a></li>
+              </ul>  
+              </div>
         <article class="main-article-page">
             <header>Ліверпуль - Уотфорд 2:0</header>
-            <img src="allen-watford.jpg" alt="Гол Аллена">
-            <p>Ліверпуль залишився на восьмому місці, перемігши Уотфорд. Це була перша вікторія мерсисайдців за три останні матчі.
-            Джо Аллен поставив почервоніння перед, як він вів в Бентеке нокдауну після хреста Коутиньо в.
-            Роберто Firmino додав другий, коли він поїхав в сітку постріл Heurelho Gomes, ймовірно, зберегли.
-            Найбільш перспективні шанси Уотфорд впав до Одіон Ігхало, але він не зумів отримати вигоду, з його найкращим зусиллям, побачивши його стріляти в верхню планку.</p>
+            <img src="images/allen-watford.jpg" alt="Гол Аллена">
+            <p>Ліверпуль залишився на восьмому місці, перемігши Уотфорд. Це була перша вікторія мерсисайдців за три останні матчі.</p>
+            <p>Джо Аллен вивів "Червоних" уперед, добивши м'яч після удару Бентеке, який відгукнувся на кросс від Коутіньо.</p>
+            <p>Роберто Фірміно додав другий, пробивши Еуреліо Гомеша, хоча воротар Уотфорда міг би зіграти й краще.</p>
+            <p>Найбільш перспективний шанс Уотфорда був у Одіона Ігало, але він не зумів використати свою нагоду, поціливши у перекладину.</p>
         </article>
         <section class="social2"></section><!-- Share on twitter & facebook-->
-        <section> <!-- comment-->
-            <header>Leave comment</header>
+        <section class="comment"> <!-- comment-->
             <form class="comment-form" id="comment-form" method="post" action="https://formspree.io/graafx1@gmail.com">
-                 <label for="name">Ім'я</label>
-                 <input type="text" name="name" id="name"><br><br>
-                 <label for="comment">Коментар</label><br>
-                 <textarea rows="4" cols="50" name="comment" id="comment"></textarea><br>
-                 <input type="submit" value="Send">
+                 <label class="comentar" for="comentar">Залиште коментар</label><br><br>
+                 <input name="name" placeholder="Вкажіть ваше ім'я!" class="textbox" required /><br><br>
+                 <textarea rows="4" cols="50" name="subject" placeholder="Введіть ваш коментар:" class="message" required></textarea><br>
+                 <input name="submit" class="button" type="submit" value="Відправити" />
             </form>
         </section>
-        <footer>
+        <div id="footer">
             <p>© All rights reserved.</p>
-        </footer>
+        </div>
     </body>
 </html>
