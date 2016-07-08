@@ -13,7 +13,7 @@ a:hover {
        top:0;
        position:absolute;
        display:block;
-       width:100%;
+       width: 100%;
 }
 
 .search-form {
@@ -54,68 +54,157 @@ a:hover {
 	cursor: pointer;
 }
 #nav2 {
-    width: 15%;
+    width: 75%;
     float: left;
 }
 ul {
         margin: 0;
         padding: 0;
         list-style-type: none;
-        
         clear: both;
+        display: inline-block;
+        width: 100%;
+        
 }
-li {padding: 15px;
+li {padding: 8px;
     border-left: 1px dotted red;
     border-bottom: 1px dotted red;
-    width: 56%;
+    width: 22%;
+    float: left;
 }
-
+#about {
+    border-right: 1px dotted red;
+}
 li a {
         font-family: 'Marck Script', cursive;
         color: red;
         padding: 5px;
         text-decoration: none;
         font-weight: bold;
-        font-size: 200%;
-        display: block;
+        font-size: 125%;
+        display: inline-block;
 }
 li a:hover {
     background-color: red;
 }
-.wrapper {
-    width: 1000px; /* Ширина элемента в пикселах */
+aside {
+    display: none;
+}
+.social {
+    display: none;
+}
+.poll {
+    top: 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Lora', serif;
+}
+.main-article {
+    width: 700px; /* Ширина элемента в пикселах */
     padding: 10px; /* Поля вокруг текста */
-    margin: auto;
+    margin-left: 1%;
     font-family: 'Lora', serif;
     font-size: 14pt;
+    text-indent: 20px;
 }
-.wrapper h2 {
-    text-align: center;
-    font-family: 'Cormorant Infant', serif;
-    color: red;
-    font-size: 30pt; 
-    margin-top: 10px;
+
+.mainjpg {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px;
 }
-table, th, td {
-   border: 1px solid black;
-}
-th, td {
-    padding: 15px;
-}
-table {
-    border-collapse: collapse;
+.container {
+    width: 70%;
+    
+    margin-top: 100px;
     margin: auto;
+    margin-left: 1%;
 }
-th {
+.other-articles1 article {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    margin-left: 1%;
+    font-family: 'Lora', serif;
+    border-top: 1px dotted red;
+    border-bottom: 1px dotted red;
+    border-right: 1px dotted red;
+    border-left: 1px dotted red;
+}
+.other-articles1 p {
+    text-indent: 20px;
+    font-size: 11pt;
+}
+.other-articles1 header {
+    font-size: 14pt;
+}
+
+.other-articles2 article {
+    width: 100%;
+    margin-left: 1%;
+    padding: 10px;
+    font-family: 'Lora', serif;
+    border-right: 1px dotted red;
+    border-left: 1px dotted red;
+    border-bottom: 1px dotted red;
+}
+.other-articles2 p {
+    text-indent: 20px;
+    font-size: 11pt;
+}
+.other-articles2 header {
+    font-size: 14pt;
+}
+.paginator {
+    clear:both;
+    width: 320px;
+    margin: 30px auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.paginator a {
+    display: inline-block;
+    min-width: 20px;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
     text-align: center;
-    background-color: red;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
     color: white;
+    background: #95a5a6;
 }
-td {
-    text-align: center;
-    vertical-align: center;
+
+.paginator .prev {
+    margin-right: 20px;
+    text-indent: -1000px;
+    background-image: url("/assets/course14/arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
-tr:nth-child(even) {background-color: #f2f2f2;}
+
+.paginator .next {
+    margin-left: 20px;
+    text-indent: -1000px;
+    background-image: url("/assets/course14/arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+}
+
+.paginator .current {
+    background-color: #16a085;
+}
+
+.paginator .disabled {
+     opacity: 0.3;
+}
+
+.paginator a:hover {
+    background-color: #2ecc71;
+}
+
 body {
  height: 100%;
  min-width:900px;
@@ -124,7 +213,7 @@ html {
  position:relative; 
  min-height:100%;
 }
-.wrapper {
+article {
  padding-bottom: 100px;/*Примерно 2 размера footer, чтобы он не наезжал на контент при узком окне браузера*/ 
 }
 #footer {

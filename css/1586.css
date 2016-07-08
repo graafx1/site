@@ -13,7 +13,7 @@ a:hover {
        top:0;
        position:absolute;
        display:block;
-       width:100%;
+       width: 100%;
 }
 
 .search-form {
@@ -82,106 +82,123 @@ li a {
 li a:hover {
     background-color: red;
 }
-article {
-    width: 1000px; /* Ширина элемента в пикселах */
-    padding: 25px; /* Поля вокруг текста */
+aside {
+    display: none;
+}
+.social {
+    margin-left: 90.5%;
+}
+.poll {
+    top: 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Lora', serif;
+}
+.main-article {
+    width: 700px; /* Ширина элемента в пикселах */
+    padding: 10px; /* Поля вокруг текста */
     margin: auto;
     font-family: 'Lora', serif;
     font-size: 14pt;
     text-indent: 20px;
 }
 
-img {
+.mainjpg {
     float: right; /* Выравнивание по правому краю  */ 
-    margin: 12px 0 12px 12px;
+    margin: 7px 0 7px 7px;
 }
-header {
-    font-size: 34pt;
-    color: red;
-    font-family: 'Cormorant Infant', serif;
-    margin-bottom: 15px;
-    text-align: center;
+.container {
+    width: 100%;
+    margin-top: 100px;
 }
-#contact {
-    width: 1000px; /* Ширина элемента в пикселах */
-    margin:0 auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  max-width:95%;
-  box-sizing:border-box;
-  padding:40px;
-  border-radius:5px; 
-  background:RGBA(255,255,255,1);
-  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
-  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+.other-articles1 article {
+    width: 30%;
+    padding: 10px;
+    float: left;
+    margin: auto;
+    font-family: 'Lora', serif;
+    border-top: 1px dotted red;
+    border-bottom: 1px dotted red;
+    border-right: 1px dotted red;
+    border-left: 1px dotted red;
 }
-.comentar {
-    font-size: 24pt;
-    color: red;
-    font-family: 'Cormorant Infant', serif;
+.other-articles1 p {
+    text-indent: 20px;
+    font-size: 11pt;
 }
-#email{
-  height:40px;
-  width:25%;
-  border-radius:3px;
-  border:rgba(0,0,0,.3) 2px solid;
-  box-sizing:border-box;
-  font-family: 'Open Sans', sans-serif;
-  font-size:14px; 
-  padding:10px;
-  margin-bottom:30px;  
-}
-#email:focus,
-#message:focus{
-  outline:none;
-   border:rgba(24,149,215,1) 2px solid;
-   color:rgba(24,149,215,1);
-}
-#message{
-    background: rgba(255, 255, 255, 0.4); 
-    width:100%;
-    height: 120px;
-    border:rgba(0,0,0,.3) 2px solid;
-    box-sizing:border-box;
-    -moz-border-radius: 3px;
-    font-size:18px;
-    font-family: 'Open Sans', sans-serif;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; 
-    display:block;
-    padding:10px;
-    margin-bottom:30px;
-    overflow:hidden;
-}
-label {
+.other-articles1 header {
     font-size: 14pt;
-    color: red;
-    font-family: 'Cormorant Infant', serif; 
 }
-.button{
-  height:50px;
-  width:100%;
-  border-radius:3px;
-  border:rgba(0,0,0,.3) 0px solid;
-  box-sizing:border-box;
-  padding:10px;
-  background:red;
-  color:#FFF;
-  font-family: 'Open Sans', sans-serif;  
-  font-weight:400;
-  font-size: 16pt;
-  transition:background .4s;
-  cursor:pointer;
+.other-articles2 {
+    clear: both;
 }
-/* Изменение фона кнопки при наведении */
-.button:hover{
-  background:#80b438;
+.other-articles2 article {
+    width: 30%;
+    padding: 10px;
+    float: left;
+    font-family: 'Lora', serif;
+    border-right: 1px dotted red;
+    border-left: 1px dotted red;
+    border-bottom: 1px dotted red;
 }
-h1 {
-    font-size: 24pt;
-    color: red;
-    font-family: 'Cormorant Infant', serif;
+.other-articles2 p {
+    text-indent: 20px;
+    font-size: 11pt;
 }
+.other-articles2 header {
+    font-size: 14pt;
+}
+.paginator {
+    clear:both;
+    width: 320px;
+    margin: 30px auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.paginator a {
+    display: inline-block;
+    min-width: 20px;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #95a5a6;
+}
+
+.paginator .prev {
+    margin-right: 20px;
+    text-indent: -1000px;
+    background-image: url("/assets/course14/arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.paginator .next {
+    margin-left: 20px;
+    text-indent: -1000px;
+    background-image: url("/assets/course14/arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+}
+
+.paginator .current {
+    background-color: #16a085;
+}
+
+.paginator .disabled {
+     opacity: 0.3;
+}
+
+.paginator a:hover {
+    background-color: #2ecc71;
+}
+
 body {
  height: 100%;
  min-width:900px;
@@ -190,7 +207,9 @@ html {
  position:relative; 
  min-height:100%;
 }
-
+article {
+ padding-bottom: 100px;/*Примерно 2 размера footer, чтобы он не наезжал на контент при узком окне браузера*/ 
+}
 #footer {
  clear:both;
  height: 20px; 

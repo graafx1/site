@@ -1,5 +1,6 @@
 body {
     background-color: #FFE0D9;
+    max-width: 1920px;
 }
 a { 
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -12,15 +13,16 @@ a:hover {
        top:0;
        position:absolute;
        display:block;
-       width:100%;
+       width: 100%;
 }
 
 .search-form {
     margin:0 auto;
-    position: absolute;
+    position: relative;
      float:left;
-     right:110px;
+     left:20px;
      margin-top: 24px;
+     max-width: 1920px;
 }
 
 .search-form .field {
@@ -86,7 +88,7 @@ aside {
     border: 2px dotted red;
 }
 .social {
-    margin-left: 94.5%;
+    margin-left: 90.5%;
 }
 .poll {
     top: 1px;
@@ -217,6 +219,7 @@ article {
  position: absolute;
  bottom: 1px;
  width: 100%;
+ max-width: 1920px;
 }
 #footer p {
     text-indent: 15px;
