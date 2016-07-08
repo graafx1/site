@@ -41,6 +41,7 @@ a:hover {
 .search-form input[type=submit] {
     position:relative; 
 	left: 1px;
+	top: -1px;
 	border:1px solid #adc5cf;
 	background: #e4f1f9; /* Old browsers */
 	background: -moz-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%); /* FF3.6+ */
@@ -91,9 +92,13 @@ article {
     text-indent: 20px;
 }
 
-img {
-    float: right; /* Выравнивание по правому краю  */ 
-    margin: 12px 0 12px 12px;
+.logo {
+   float: left;
+   margin-left: 1px;
+}
+.me {
+    float: right; /* Выравнивание по правому краю  */
+    margin: 7px 0 7px 7px;
 }
 header {
     font-size: 34pt;
