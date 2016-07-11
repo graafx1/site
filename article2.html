@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/article.css">
+        <link rel="stylesheet" media="(max-width: 1424px)" href="css/article-responsive.css">
         <link href='https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
@@ -17,13 +18,13 @@
             </form>
         </div>
         <section class="social"></section><!-- twitter & facebook--> 
-            <img src="images/Liverpool_FC_08_09_by_SimpsonsCameos.jpg" width="1920px" height="302px" alt="Логотип"> <!-- logo-->
+            <img src="images/Liverpool_FC_08_09_by_SimpsonsCameos.jpg" class="logo" width="1920px" height="302px" alt="Логотип"> <!-- logo-->
               <div id="nav2">
               <ul>
             <li><a href="index.html">Головна</a></li>
             <li><a href="team.html">Команда</a></li>
             <li><a href="fixtures.html">Календар</a></li>
-            <li><a href="about-me.html">Про мене</a></li>
+            <li id="about"><a href="about-me.html">Про мене</a></li>
               </ul>  
               </div>
         <article class="main-article-page">
@@ -50,7 +51,18 @@
 <p>До достоїнств Клоппа варто віднести його харизматичність та психологічну стійкість, завдяки якій він зумів добряче струсонути колектив. І якщо вивести із умовного піке міг і північноірландець (нова схема, переведення Коутіньо на роль треквартисти чи щось на кшталт), але навіть минулорічні 3-4-3 виглядали скоріше як тимчасове вдале підлаштування під попутній вітер, а не знайдений постійний власний маршрут. Німець же змусив команду йти власним шляхом, нехай і не без циклонів та поломок літака. Нехай на це пішло багато часу, але вдалось перевірити апарат в бою, а не шляхом навчальних вильотів, що значно цінніше.</p>
 <p>Про другу ж половину польоту спробуємо поговорити у третій частині циклу вражень про ЛФК у нинішньому сезоні.</p>
         </article>
-        <section class="social2"></section><!-- Share on twitter & facebook-->
+        <section class="social2">
+            <script type="text/javascript">(function() {
+                if (window.pluso)if (typeof window.pluso.start == "function") return;
+                if (window.ifpluso==undefined) { window.ifpluso = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                var h=d[g]('body')[0];
+                h.appendChild(s);
+                }})();</script>
+                <div data-url="https://site-graaf-x.c9users.io/article2.html" class="pluso" data-background="transparent" data-options="medium,square,line,horizontal,nocounter,theme=03" data-services="facebook,twitter"></div>
+        </section><!-- Share on twitter & facebook-->
         <section class="comment"> <!-- comment-->
             <form class="comment-form" id="comment-form" method="post" action="https://formspree.io/graafx1@gmail.com">
                  <label class="comentar" for="comentar">Залиште коментар</label><br><br>

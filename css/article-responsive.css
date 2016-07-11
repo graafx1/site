@@ -54,68 +54,136 @@ a:hover {
 	cursor: pointer;
 }
 #nav2 {
-    width: 15%;
+    width: 100%;
     float: left;
+   
 }
 ul {
         margin: 0;
         padding: 0;
         list-style-type: none;
-        
         clear: both;
+        display: inline-block;
+        width: 100%;
+        
 }
-li {padding: 15px;
+li {padding: 8px;
     border-left: 1px dotted red;
     border-bottom: 1px dotted red;
-    width: 85%;
+    
+    width: 20%;
+    float: left;
 }
-
+#about {
+    border-right: 1px dotted red;
+}
 li a {
         font-family: 'Marck Script', cursive;
         color: red;
         padding: 5px;
         text-decoration: none;
         font-weight: bold;
-        font-size: 200%;
-        display: block;
+        font-size: 115%;
+        display: inline-block;
 }
 li a:hover {
     background-color: red;
 }
-.wrapper {
+article {
     width: 1000px; /* Ширина элемента в пикселах */
     padding: 10px; /* Поля вокруг текста */
     margin: auto;
     font-family: 'Lora', serif;
     font-size: 14pt;
+    text-indent: 20px;
+    border-bottom: 1px dotted red;
 }
-.wrapper h2 {
-    text-align: center;
-    font-family: 'Cormorant Infant', serif;
+img {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px;
+}
+header {
+    font-size: 34pt;
     color: red;
-    font-size: 30pt; 
+    font-family: 'Cormorant Infant', serif;
+    
+}
+
+.social2 {
+    margin-left: 15%;
+    padding: 10px;
+}
+.comment-form {
+    width: 1000px; /* Ширина элемента в пикселах */
+    margin:0 auto;
     margin-top: 10px;
+  max-width:95%;
+  box-sizing:border-box;
+  padding:40px;
+  border-radius:5px; 
+  background:RGBA(255,255,255,1);
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
 }
-table, th, td {
-   border: 1px solid black;
+.comentar {
+   font-size: 24pt;
+    color: red;
+    font-family: 'Cormorant Infant', serif;
 }
-th, td {
-    padding: 15px;
+.textbox{
+  height:50px;
+  width:25%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px; 
+  padding:10px;
+  margin-bottom:30px;  
 }
-table {
-    border-collapse: collapse;
-    margin: auto;
+.message:focus,
+.textbox:focus{
+  outline:none;
+   border:rgba(24,149,215,1) 2px solid;
+   color:rgba(24,149,215,1);
 }
-th {
-    text-align: center;
-    background-color: red;
-    color: white;
+/* Стили текстового поля */
+.message{
+    background: rgba(255, 255, 255, 0.4); 
+    width:100%;
+    height: 120px;
+    border:rgba(0,0,0,.3) 2px solid;
+    box-sizing:border-box;
+    -moz-border-radius: 3px;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    display:block;
+    padding:10px;
+    margin-bottom:30px;
+    overflow:hidden;
 }
-td {
-    text-align: center;
-    vertical-align: center;
+/* Базовые стили кнопки */
+.button{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  background:red;
+  color:#FFF;
+  font-family: 'Open Sans', sans-serif;  
+  font-weight:400;
+  font-size: 16pt;
+  transition:background .4s;
+  cursor:pointer;
 }
-tr:nth-child(even) {background-color: #f2f2f2;}
+/* Изменение фона кнопки при наведении */
+.button:hover{
+  background:#80b438;
+}
 body {
  height: 100%;
  min-width:900px;
@@ -124,9 +192,7 @@ html {
  position:relative; 
  min-height:100%;
 }
-.wrapper {
- padding-bottom: 100px;/*Примерно 2 размера footer, чтобы он не наезжал на контент при узком окне браузера*/ 
-}
+
 #footer {
  clear:both;
  height: 20px; 

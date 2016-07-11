@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/article.css">
+        <link rel="stylesheet" media="(max-width: 1424px)" href="css/article-responsive.css">
         <link href='https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
@@ -17,13 +18,13 @@
             </form>
         </div>
         <section class="social"></section><!-- twitter & facebook--> 
-            <img src="images/Liverpool_FC_08_09_by_SimpsonsCameos.jpg" width="1920px" height="302px" alt="Логотип"> <!-- logo-->
+            <img src="images/Liverpool_FC_08_09_by_SimpsonsCameos.jpg" class="logo" width="1920px" height="302px" alt="Логотип"> <!-- logo-->
               <div id="nav2">
               <ul>
             <li><a href="index.html">Головна</a></li>
             <li><a href="team.html">Команда</a></li>
             <li><a href="fixtures.html">Календар</a></li>
-            <li><a href="about-me.html">Про мене</a></li>
+            <li id="about"><a href="about-me.html">Про мене</a></li>
               </ul>  
               </div>
         <article class="main-article-page">
@@ -44,7 +45,18 @@
 <p>Із його мінусів очевидним є невміння працювати на трансферному ринку. Спочатку Алленів та Борінь списували на відсутність амбіцій та не достатню міцність стержня, який розходився із амбіціями клубу. Не вистачало йому і кам'яної стійкості, яка була особливо вразлива до громадської думки. Де тільки не грав Джеррард, аби скаузери могли максимально споглядати на аксакала.</p>
 <p>А він просто мав набити свою кількість шишок, поставити мінімально необхідну кількість експериментів. Його філософія враховувала максимальну кількість інтересів: гравців, керівництва, горе-комітету, вболівальників. Цю філософію він підтримував до останнього і за це ж поплатився. Не можна бути хорошим для всіх. Шкода, що цей непідйомний камінь він так і намагався нести до кінця.</p>
         </article>
-        <section class="social2"></section><!-- Share on twitter & facebook-->
+        <section class="social2">
+            <script type="text/javascript">(function() {
+                if (window.pluso)if (typeof window.pluso.start == "function") return;
+                if (window.ifpluso==undefined) { window.ifpluso = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                var h=d[g]('body')[0];
+                h.appendChild(s);
+                }})();</script>
+                <div data-url="https://site-graaf-x.c9users.io/article3.html" class="pluso" data-background="transparent" data-options="medium,square,line,horizontal,nocounter,theme=03" data-services="facebook,twitter"></div>
+        </section><!-- Share on twitter & facebook-->
         <section class="comment"> <!-- comment-->
             <form class="comment-form" id="comment-form" method="post" action="https://formspree.io/graafx1@gmail.com">
                  <label class="comentar" for="comentar">Залиште коментар</label><br><br>
