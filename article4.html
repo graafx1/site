@@ -52,14 +52,28 @@
                 }})();</script>
                 <div data-url="https://site-graaf-x.c9users.io/article4.html" class="pluso" data-background="transparent" data-options="medium,square,line,horizontal,nocounter,theme=03" data-services="facebook,twitter"></div>
         </section><!-- Share on twitter & facebook-->
-        <section class="comment"> <!-- comment-->
-            <form class="comment-form" id="comment-form" method="post" action="https://formspree.io/graafx1@gmail.com">
-                 <label class="comentar" for="comentar">Залиште коментар</label><br><br>
-                 <input name="name" placeholder="Вкажіть ваше ім'я!" class="textbox" required /><br><br>
-                 <textarea rows="4" cols="50" name="subject" placeholder="Введіть ваш коментар:" class="message" required></textarea><br>
-                 <input name="submit" class="button" type="submit" value="Відправити" />
-            </form>
-        </section>
+        <div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//graafx1.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         <div id="footer">
             <p>© All rights reserved.</p>
         </div>

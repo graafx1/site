@@ -111,6 +111,12 @@ header {
     margin-left: 25%;
     padding: 10px;
 }
+#disqus_thread {
+    width: 1000px; /* Ширина элемента в пикселах */
+    margin:0 auto;
+    margin-top: 10px;
+  max-width:95%;
+}
 .comment-form {
     width: 1000px; /* Ширина элемента в пикселах */
     margin:0 auto;
