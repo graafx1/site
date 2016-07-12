@@ -15,6 +15,7 @@ a:hover {
        display:block;
        width: 20%;
        max-width: 384px;
+       min-width: 384px;
 }
 #navigation {
        top:0;
