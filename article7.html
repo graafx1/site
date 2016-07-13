@@ -10,12 +10,8 @@
         <title> Ліверпуль - Уотфорд 2:0 </title>
     </head>
     <body>
-        <div id="navigation">
-            <form class="search-form" id="search-form" method="post" action="https://formspree.io/graafx1@gmail.com">
-                 <label for="name"></label>
-                 <input class="field" type="text" name="name" id="name">
-                 <input type="submit" value="Пошук">
-            </form>
+        <div id="search">
+            <gcse:search></gcse:search>
         </div>
         <section class="social"></section><!-- twitter & facebook--> 
             <img src="images/Liverpool_FC_08_09_by_SimpsonsCameos.jpg" class="logo" width="1920px" height="302px" alt="Логотип"> <!-- logo-->
@@ -36,41 +32,15 @@
             <p>Найбільш перспективний шанс Уотфорда був у Одіона Ігало, але він не зумів використати свою нагоду, поціливши у перекладину.</p>
         </article>
         <section class="social2">
-            <script type="text/javascript">(function() {
-                if (window.pluso)if (typeof window.pluso.start == "function") return;
-                if (window.ifpluso==undefined) { window.ifpluso = 1;
-                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
-                var h=d[g]('body')[0];
-                h.appendChild(s);
-                }})();</script>
                 <div data-url="https://site-graaf-x.c9users.io/article7.html" class="pluso" data-background="transparent" data-options="medium,square,line,horizontal,nocounter,theme=03" data-services="facebook,twitter"></div>
         </section><!-- Share on twitter & facebook-->
         <div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    /*
-    var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        
-        s.src = '//graafx1.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         <div id="footer">
             <p>© All rights reserved.</p>
         </div>
+        <script src="js/search.js"></script>
+        <script src="js/social.js"></script>
+        <script src="js/disqus.js"></script>
     </body>
 </html>

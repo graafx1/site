@@ -1,6 +1,13 @@
+html { 
+ position:relative; 
+ min-height:100%;
+}
 body {
     background-color: #FFE0D9;
     max-width: 1920px;
+    margin: 0 auto;
+    height: 100%;
+    min-width:900px;
 }
 a { 
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -9,49 +16,13 @@ a {
 a:hover {
     color: black;
 }
-#navigation {
-       top:0;
+#search {
+    top:0;
        position:absolute;
        display:block;
-       width:100%;
-}
-
-.search-form {
-    margin:0 auto;
-    position: relative;
-     float:left;
-     left:20px;
-     margin-top: 24px;
-     max-width: 1920px;
-}
-
-.search-form .field {
-  width: 150px;
-  height: 20px;
-  background: #FFE0D9;
-  border: none;
-  font-size: 10pt;
-  float: left;
-  color: #262626;
-  padding-left: 45px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-.search-form input[type=submit] {
-    position:relative; 
-	left: 1px;
-	border:1px solid #adc5cf;
-	background: #e4f1f9; /* Old browsers */
-	background: -moz-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4f1f9), color-stop(100%,#d5e7f3)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* IE10+ */
-	background: linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f1f9', endColorstr='#d5e7f3',GradientType=0 ); /* IE6-9 */
-	color:#7da2aa;
-	cursor: pointer;
+       width: 20%;
+       max-width: 384px;
+       min-width: 384px;
 }
 #nav2 {
     width: 15%;
@@ -88,6 +59,7 @@ li a:hover {
     margin: auto;
     font-family: 'Lora', serif;
     font-size: 14pt;
+    padding-bottom: 100px;
 }
 .wrapper h2 {
     text-align: center;
@@ -116,17 +88,6 @@ td {
     vertical-align: center;
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
-body {
- height: 100%;
- min-width:900px;
-}
-html { 
- position:relative; 
- min-height:100%;
-}
-.wrapper {
- padding-bottom: 100px;/*Примерно 2 размера footer, чтобы он не наезжал на контент при узком окне браузера*/ 
-}
 #footer {
  clear:both;
  height: 20px; 

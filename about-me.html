@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/about-me.css">
@@ -10,15 +10,11 @@
         <title> Про мене </title>
     </head>
     <body>
-        <div id="navigation">
-            <form class="search-form" id="search-form" method="post" action="https://formspree.io/graafx1@gmail.com">
-                 <label for="name"></label>
-                 <input class="field" type="text" name="name" id="name">
-                 <input type="submit" value="Пошук">
-            </form>
-        </div>
+    <div id="search">
+    <gcse:search></gcse:search>
+    </div>
         <section class="social"></section><!-- twitter & facebook--> 
-            <img src="images/Liverpool_FC_08_09_by_SimpsonsCameos.jpg" width="1920px" height="302px" class="logo" alt="Логотип"> <!-- logo-->
+            <img src="images/Liverpool_FC_08_09_by_SimpsonsCameos.jpg" width="1920" height="302" class="logo" alt="Логотип"> <!-- logo-->
               <div id="nav2">
               <ul>
             <li><a href="index.html">Головна</a></li>
@@ -38,16 +34,17 @@
         <form id="contact">
             <label class="comentar" for="comentar">Форма для зворотнього зв'язку</label><br><br>
             <label for="email">Email:</label>
-            <input id="email" type="text">
+            <input id="email" type="text" required>
             <br>
             <label for="message">Повідомлення:</label>
-            <input id="message" type="text">
+            <input id="message" type="text" required>
             <br>
             <input type="submit" class="button" id="submit" value="Відправити">
         </form>
         <div id="footer">
             <p>© All rights reserved.</p>
         </div>
+        <script src="js/search.js"></script>
         <script src="//code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
         <script src="js/form.js"></script>
     </body>
